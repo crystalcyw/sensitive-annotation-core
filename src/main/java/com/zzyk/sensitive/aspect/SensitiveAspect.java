@@ -11,6 +11,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
+import org.springframework.stereotype.Component;
 
 /**
  * 数据脱敏切面类
@@ -19,6 +20,7 @@ import org.aspectj.lang.reflect.MethodSignature;
  * @date 2021/04/13
  */
 @Aspect
+@Component
 public class SensitiveAspect {
 
     @Pointcut("@within(com.zzyk.sensitive.annotation.Sensitive) || @annotation(com.zzyk.sensitive.annotation.Sensitive)")

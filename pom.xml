@@ -6,7 +6,7 @@
 
   <groupId>com.zzyk</groupId>
   <artifactId>sensitive-annotation-core</artifactId>
-  <version>1.0.2</version>
+  <version>1.0.0</version>
   <packaging>jar</packaging>
   <name>sensitive-annotation-core</name>
   <description>自定义 SpringBoot Controller 层返回数据脱敏注解</description>
@@ -42,6 +42,11 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-web</artifactId>
+      <version>5.0.8.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
       <version>5.0.8.RELEASE</version>
     </dependency>
     <dependency>
